@@ -3,12 +3,7 @@ const gridDiv = document.querySelector('.grid');
 const previewGridDiv = document.querySelector('.preview-grid');
 const scoreSpan = document.querySelector('.score');
 const startBtn = document.querySelector('.start-button');
-
-// random function
-function selectRandom(obj){
-   return Math.floor(Math.random() * obj)
-}
-
+    
 //#region 
 // function Grid(name)
 // {
@@ -135,5 +130,11 @@ const iTetromino = new Tetromino('iTetromino', [
 
 // Add each Tetromino to a Tetrominoes array
 const Tetrominoes = [jTetromino, lTetromino, sTetromino, zTetromino, tTetromino, oTetromino, iTetromino];
+
+// Assign the Math.random function to the 'random' variable
+let random = Math.floor(Math.random() * Tetrominoes.length);
+
+// Randomly choose a Tetromino from the Array 'Tetrominoes' and assign it to the 'currentTetromino' variable
+let currentTetromino = Tetrominoes[random][currentRotation];
 
 //#endregion
