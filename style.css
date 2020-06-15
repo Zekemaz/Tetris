@@ -7,12 +7,18 @@
 .container .grid {
   width: 200px;
   height: 400px;
-  background-color: #F0F0F0;
+  background-color: #000;
   border: 1px ridge #bdbdbd;
+  display: flex;
+  flex-wrap: wrap;
 }
 
-.container .grid .gridd-cell {
-  border: 1px ridge #bdbdbd;
+.container .grid .grid-cell {
+  width: 20px;
+  height: 20px;
+}
+.container .taken{
+  background-color: blue;
 }
 .container .preview-grid{
   width: 80px;
