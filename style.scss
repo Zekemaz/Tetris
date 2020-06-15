@@ -1,0 +1,28 @@
+$cellSize: 20px;
+$gridWidth: ($cellSize * 10);
+$gridHeight: ($cellSize * 20);
+$previewSize: ($cellSize * 4);
+$gridColor: #F0F0F0;
+
+
+.container
+{
+    display: flex;
+    .grid
+    {
+        width: $gridWidth;
+        height: $gridHeight;
+        background-color: $gridColor;
+        border: 1px ridge darken(#F0F0F0, 20);
+        
+        .gridd-cell
+        {
+            border: 1px ridge darken(#F0F0F0, 20);
+        }
+    }
+    .preview-grid-cell{
+        width: $previewSize;
+        height: $previewSize;
+        background-color: #000;
+    }
+}
