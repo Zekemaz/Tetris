@@ -1,0 +1,23 @@
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.container .grid {
+  width: 200px;
+  height: 400px;
+  background-color: #F0F0F0;
+  border: 1px ridge #bdbdbd;
+}
+
+.container .grid .gridd-cell {
+  border: 1px ridge #bdbdbd;
+}
+.container .preview-grid{
+  width: 80px;
+  height: 80px;
+  background-color: #F0F0F0;
+  border: 1px ridge #bdbdbd;
+}
+/*# sourceMappingURL=style.css.map */
